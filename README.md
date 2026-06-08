@@ -16,7 +16,6 @@
 [![Downloads](https://img.shields.io/github/downloads/your-org/jungle-warfair/total?style=for-the-badge&color=2d5a27&label=Total+Downloads)](../../releases)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![Mod Support](https://img.shields.io/badge/Mod_Support-✔_Full-brightgreen?style=for-the-badge)](#-modding)
-[![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-invite)
 
 </div>
 

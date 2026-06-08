@@ -8,19 +8,19 @@
 ╚█████╔╝╚██████╔╝██║ ╚███║╚██████║ ███████╗███████╗
  ╚════╝  ╚═════╝ ╚═╝  ╚══╝ ╚═════╝ ╚══════╝╚══════╝
 
-██╗    ██╗ █████╗ ██████╗ ███████╗ █████╗ ██╗██████╗
-██║    ██║██╔══██╗██╔══██╗██╔════╝██╔══██╗██║██╔══██╗
-██║ █╗ ██║███████║██████╔╝█████╗  ███████║██║██████╔╝
-██║███╗██║██╔══██║██╔══██╗██╔══╝  ██╔══██║██║██╔══██╗
-╚███╔███╔╝██║  ██║██║  ██║██║     ██║  ██║██║██║  ██║
- ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝
+██╗    ██╗ █████╗ ██████╗ ███████╗ █████╗ ██████╗ ███████╗
+██║    ██║██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔════╝
+██║ █╗ ██║███████║██████╔╝█████╗  ███████║██████╔╝█████╗
+██║███╗██║██╔══██║██╔══██╗██╔══╝  ██╔══██║██╔══██╗██╔══╝
+╚███╔███╔╝██║  ██║██║  ██║██║     ██║  ██║██║  ██║███████╗
+ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 ```
 
 **Build. Command. Raid. Survive.**  
 *A jungle survival war game — with a full modding framework.*
 
-[![Latest Release](https://img.shields.io/github/v/release/your-org/jungle-warfair?style=for-the-badge&color=3a6b35&label=Latest+Release)](../../releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/your-org/jungle-warfair/total?style=for-the-badge&color=2d5016&label=Total+Downloads)](../../releases)
+[![Latest Release](https://img.shields.io/github/v/release/your-org/jungle-warfare?style=for-the-badge&color=3a6b35&label=Latest+Release)](../../releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/your-org/jungle-warfare/total?style=for-the-badge&color=2d5016&label=Total+Downloads)](../../releases)
 [![Godot 4.x](https://img.shields.io/badge/Godot-4.x-478cbf?style=for-the-badge&logo=godotengine&logoColor=white)](https://godotengine.org/)
 [![GDScript](https://img.shields.io/badge/Mods-GDScript-478cbf?style=for-the-badge)](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/)
 [![Source Code](https://img.shields.io/badge/Source_Code-Closed-red?style=for-the-badge)]()
@@ -31,7 +31,7 @@
 ---
 
 > **What is this repo?**  
-> This is the official **releases page** for Jungle Warfair — game binaries and the Mod SDK are both distributed here.  
+> This is the official **releases page** for Jungle Warfare — game binaries and the Mod SDK are both distributed here.  
 > The game is **free to download and play**. The **source code is closed and will not be made available** under any circumstances.  
 > Do not open issues or pull requests asking for source access — those will be closed without response.
 
@@ -39,7 +39,7 @@
 
 ## 🎮 About the Game
 
-**Jungle Warfair** is a multiplayer survival war game set in dense, hostile jungle. Think Rust — but deeper in the canopy, and with an RTS twist.
+**Jungle Warfare** is a multiplayer survival war game set in dense, hostile jungle. Think Rust — but deeper in the canopy, and with an RTS twist.
 
 - 🪵 **Build like Rust** — gather resources, construct and fortify your base in the jungle
 - 🪖 **Command troops** — direct AI soldiers to raid, defend, and flank enemy positions
@@ -54,13 +54,16 @@
 
 ## 🖥️ Dedicated Servers & Anti-Cheat
 
-Jungle Warfair runs exclusively on dedicated servers. There are no self-hosted or peer-to-peer options.
+Jungle Warfare runs exclusively on dedicated servers. There are no peer-to-peer options.
 
-**Server rules are strictly enforced:**
+**How mods work in multiplayer:**  
+Mods are installed on the server, not the client. When a player connects, the server automatically sends all active mods to their client. Players never need to manually download or install mods — it just works.
+
+**Server rules are strictly enforced by the Jungle Warfare Dev Team:**
 
 - Cheating, exploiting, or using modified clients to gain an unfair advantage results in a **permanent ban**
-- Mods run **server-side only** through the modding framework — clients cannot inject unauthorised code
-- Any mod submitted to a server is reviewed against the mod API allowlist; mods cannot access internals outside the published API
+- Mods are distributed server-to-client automatically and run in a sandboxed environment — clients cannot inject unauthorised code
+- Mods cannot access internals outside the published mod API
 
 > ⚠️ **Mods are for server customisation, not client advantage.**  
 > If your mod gives one player an edge that others can't see or counter, it won't be allowed on any official server.
@@ -71,12 +74,13 @@ Jungle Warfair runs exclusively on dedicated servers. There are no self-hosted o
 
 ### [⬇️ Go to Releases →](../../releases/latest)
 
-Both the game client and Mod SDK are published here. Pick what you need:
+All official releases are published here by the Jungle Warfare Dev Team:
 
 | Download | Who it's for |
 |---|---|
 | 🎮 **Game Client** (`.exe` / `.AppImage` / `.dmg`) | Players who want to connect to servers and play |
-| 🛠️ **Mod SDK** (`.zip`) | Modders who want to build and test mods |
+| 🖥️ **Dedicated Server** (`.exe` / `.tar.gz`) | Anyone who wants to host their own server |
+| 🛠️ **Mod SDK** (`.zip`) | Modders who want to build mods for their server |
 
 **Supported platforms:** Windows, Linux, macOS
 
@@ -87,9 +91,19 @@ Both the game client and Mod SDK are published here. Pick what you need:
 
 1. Download the client for your platform from [Releases](../../releases/latest)
 2. Run the installer (Windows) or extract the archive (Linux/macOS)
-3. Launch Jungle Warfair and connect to a server — no account or setup required
+3. Launch Jungle Warfare and connect to a server — no account or setup required
 
 > There is no offline mode and no save system. Progress lives on the server.
+
+### Setting Up a Dedicated Server
+
+1. Download the dedicated server package for your platform from [Releases](../../releases/latest)
+2. Extract the archive and run `JungleWarfare-Server`
+3. Edit `server.cfg` to set your server name, player limit, and other options
+4. Drop any `.pck` mod files into the `mods/` folder before starting
+5. Forward the required ports and share your server address with players
+
+Players connecting to your server will **automatically receive all server-side mods** — they do not need to install anything manually. See the [Modding](#️-modding) section for how to build mods.
 
 ### Mod SDK Contents
 
@@ -108,7 +122,7 @@ SDK releases are versioned alongside the game. Check the release notes to confir
 
 ## 🛠️ Modding
 
-Jungle Warfair's modding framework is built on **Godot 4** and **GDScript**. Mods are packed into Godot `.pck` files and loaded by the server at runtime. You do **not** need the game source code — the Mod SDK is self-contained.
+Jungle Warfare's modding framework is built on **Godot 4** and **GDScript**. Mods are packed into Godot `.pck` files, installed on the server, and automatically delivered to players when they connect. You do **not** need the game source code — the Mod SDK is self-contained.
 
 ### Prerequisites
 
@@ -249,10 +263,10 @@ All paths inside the `.pck` should start with `res://mods/<your_mod_id>/`. If th
 
 Drop the `.pck` into the server's mods folder:
 
-- **Windows:** `%APPDATA%\JungleWarfair\mods\`
-- **Linux / macOS:** `~/.local/share/JungleWarfair/mods/`
+- **Windows:** `%APPDATA%\JungleWarfare\mods\`
+- **Linux / macOS:** `~/.local/share/JungleWarfare/mods/`
 
-Restart the server. The `[ModLoader]` lines in the server log will confirm whether the mod loaded successfully.
+Restart the server. Connecting clients will receive the mod automatically — no action needed on the player's side. The `[ModLoader]` lines in the server log will confirm whether the mod loaded successfully.
 
 ---
 
@@ -293,7 +307,7 @@ Full SDK release notes are in the [Releases](../../releases) tab and in [`CHANGE
 
 ## 📢 Sharing Your Mod
 
-There's no central mod store yet — for now, open a [Discussion](../../discussions) in this repo to share your work, get feedback, or find collaborators. More info on this will come as the game develops.
+There's no central mod store yet — for now, open a [Discussion](../../discussions) in this repo to share your work, get feedback, or find collaborators. The Jungle Warfare Dev Team will share more information on this as the game develops.
 
 ---
 
@@ -317,6 +331,6 @@ The Mod SDK tooling (`build_mod.py`, `read_pck.py`, and related scripts) is rele
 
 <div align="center">
 
-*More info coming as development continues.*
+*More info coming as development continues — Jungle Warfare Dev Team*
 
 </div>

@@ -1,182 +1,322 @@
 <div align="center">
 
 ```
- ██╗██╗   ██╗███╗   ██╗ ██████╗ ██╗     ███████╗
- ██║██║   ██║████╗  ██║██╔════╝ ██║     ██╔════╝
- ██║██║   ██║██╔██╗ ██║██║  ███╗██║     █████╗  
- ██║██║   ██║██║╚██╗██║██║   ██║██║     ██╔══╝  
- ██║╚██████╔╝██║ ╚████║╚██████╔╝███████╗███████╗
- ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝
-          W A R F A I R
+     ██╗██╗   ██╗███╗  ██╗ ██████╗ ██╗     ███████╗
+     ██║██║   ██║████╗ ██║██╔════╝ ██║     ██╔════╝
+     ██║██║   ██║██╔██╗██║██║ ███╗ ██║     █████╗
+██   ██║██║   ██║██║╚████║██║  ██║ ██║     ██╔══╝
+╚█████╔╝╚██████╔╝██║ ╚███║╚██████║ ███████╗███████╗
+ ╚════╝  ╚═════╝ ╚═╝  ╚══╝ ╚═════╝ ╚══════╝╚══════╝
+
+██╗    ██╗ █████╗ ██████╗ ███████╗ █████╗ ██╗██████╗
+██║    ██║██╔══██╗██╔══██╗██╔════╝██╔══██╗██║██╔══██╗
+██║ █╗ ██║███████║██████╔╝█████╗  ███████║██║██████╔╝
+██║███╗██║██╔══██║██╔══██╗██╔══╝  ██╔══██║██║██╔══██╗
+╚███╔███╔╝██║  ██║██║  ██║██║     ██║  ██║██║██║  ██║
+ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝
 ```
 
-**A deep-jungle tactical combat game — built to be broken, rebuilt, and modded.**
+**Build. Command. Raid. Survive.**  
+*A jungle survival war game — with a full modding framework.*
 
-[![Latest Release](https://img.shields.io/github/v/release/your-org/jungle-warfair?style=for-the-badge&color=4a7c59&label=Latest+Release)](../../releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/your-org/jungle-warfair/total?style=for-the-badge&color=2d5a27&label=Total+Downloads)](../../releases)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-[![Mod Support](https://img.shields.io/badge/Mod_Support-✔_Full-brightgreen?style=for-the-badge)](#-modding)
+[![Latest Release](https://img.shields.io/github/v/release/your-org/jungle-warfair?style=for-the-badge&color=3a6b35&label=Latest+Release)](../../releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/your-org/jungle-warfair/total?style=for-the-badge&color=2d5016&label=Total+Downloads)](../../releases)
+[![Godot 4.x](https://img.shields.io/badge/Godot-4.x-478cbf?style=for-the-badge&logo=godotengine&logoColor=white)](https://godotengine.org/)
+[![GDScript](https://img.shields.io/badge/Mods-GDScript-478cbf?style=for-the-badge)](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/)
+[![Source Code](https://img.shields.io/badge/Source_Code-Closed-red?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-Proprietary-lightgrey?style=for-the-badge)](LICENSE)
 
 </div>
 
 ---
 
-## 📦 Downloads & Releases
-
-> **This is the official public releases repository for Jungle Warfair.**  
-> Stable builds, beta previews, and hotfixes are all published here.
-
-| Channel | Description | Stability |
-|---|---|---|
-| 🟢 **Stable** | Fully tested, recommended for all players | ✅ Production-ready |
-| 🟡 **Beta** | Feature-complete but may have rough edges | ⚠️ Mostly stable |
-| 🔴 **Nightly** | Experimental bleeding-edge builds | ❌ Expect bugs |
-
-### ⬇️ [Go to Releases →](../../releases)
-
-Each release includes:
-- Windows (`.exe` installer & portable `.zip`)
-- Linux (`.AppImage` & `.tar.gz`)
-- macOS (`.dmg`)
-- Full mod SDK and example mods
-- Changelog and patch notes
+> **What is this repo?**  
+> This is the official **releases page** for Jungle Warfair — game binaries and the Mod SDK are both distributed here.  
+> The game is **free to download and play**. The **source code is closed and will not be made available** under any circumstances.  
+> Do not open issues or pull requests asking for source access — those will be closed without response.
 
 ---
 
 ## 🎮 About the Game
 
-**Jungle Warfair** is a tactical combat game set in dense, procedurally generated jungle environments. Command your squad through hostile terrain, manage resources, and outmaneuver enemies hidden beneath a canopy that hides as many dangers as your opponents do.
+**Jungle Warfair** is a multiplayer survival war game set in dense, hostile jungle. Think Rust — but deeper in the canopy, and with an RTS twist.
 
-- 🌿 **Dynamic jungle environments** — terrain, weather, and wildlife all affect combat
-- 🧠 **Tactical squad AI** — give orders and let your team execute
-- 🔫 **Deep weapon & gear systems** — every loadout decision matters
-- 🗺️ **Procedural map generation** — no two missions are the same
-- 🛠️ **Built from the ground up for modding**
+- 🪵 **Build like Rust** — gather resources, construct and fortify your base in the jungle
+- 🪖 **Command troops** — direct AI soldiers to raid, defend, and flank enemy positions
+- ⚔️ **Raid other players** — knock down their bases, take their resources, dominate the map
+- 🌿 **The jungle is the third enemy** — terrain, wildlife, and visibility all work against you
+- 🖥️ **Dedicated servers only** — no peer-to-peer, no local hosting, no offline play
+- 🚫 **Zero tolerance for cheating** — see the server rules below
+
+> There is no save system. What you build, you defend. What you lose, you lose.
+
+---
+
+## 🖥️ Dedicated Servers & Anti-Cheat
+
+Jungle Warfair runs exclusively on dedicated servers. There are no self-hosted or peer-to-peer options.
+
+**Server rules are strictly enforced:**
+
+- Cheating, exploiting, or using modified clients to gain an unfair advantage results in a **permanent ban**
+- Mods run **server-side only** through the modding framework — clients cannot inject unauthorised code
+- Any mod submitted to a server is reviewed against the mod API allowlist; mods cannot access internals outside the published API
+
+> ⚠️ **Mods are for server customisation, not client advantage.**  
+> If your mod gives one player an edge that others can't see or counter, it won't be allowed on any official server.
+
+---
+
+## 📦 Downloads
+
+### [⬇️ Go to Releases →](../../releases/latest)
+
+Both the game client and Mod SDK are published here. Pick what you need:
+
+| Download | Who it's for |
+|---|---|
+| 🎮 **Game Client** (`.exe` / `.AppImage` / `.dmg`) | Players who want to connect to servers and play |
+| 🛠️ **Mod SDK** (`.zip`) | Modders who want to build and test mods |
+
+**Supported platforms:** Windows, Linux, macOS
+
+> 🔒 **The source code is not included in any release and is not publicly available.**  
+> The binaries are the only form in which the game is distributed.
+
+### Installing the Game
+
+1. Download the client for your platform from [Releases](../../releases/latest)
+2. Run the installer (Windows) or extract the archive (Linux/macOS)
+3. Launch Jungle Warfair and connect to a server — no account or setup required
+
+> There is no offline mode and no save system. Progress lives on the server.
+
+### Mod SDK Contents
+
+Each SDK release includes:
+
+| File | What it is |
+|---|---|
+| `build_mod.py` | Packs your mod folder into a `.pck` file |
+| `read_pck.py` | Inspects a `.pck` to verify its contents |
+| `tutorial_mod/` | A fully commented starter mod — read it, it's the tutorial |
+| `CHANGELOG.md` | What changed in this SDK version |
+
+SDK releases are versioned alongside the game. Check the release notes to confirm compatibility.
 
 ---
 
 ## 🛠️ Modding
 
-Jungle Warfair was designed with modding as a first-class feature. Nearly every system in the game can be extended, replaced, or overhauled.
+Jungle Warfair's modding framework is built on **Godot 4** and **GDScript**. Mods are packed into Godot `.pck` files and loaded by the server at runtime. You do **not** need the game source code — the Mod SDK is self-contained.
 
-### What Can Be Modded
+### Prerequisites
 
-| System | Moddable | Notes |
-|---|---|---|
-| Maps & Terrain | ✅ | Custom biomes, tilesets, and generators |
-| Weapons & Equipment | ✅ | Full stat control, custom models |
-| Enemies & Factions | ✅ | New AI behaviors, unit types |
-| Game Modes | ✅ | Script your own win conditions |
-| UI & HUD | ✅ | Full layout and styling control |
-| Sound & Music | ✅ | Drop-in audio replacement |
-| Core Engine | ⚠️ | Limited — contact devs for deep hooks |
+| Tool | Why you need it |
+|---|---|
+| **Python 3.x** | To run `build_mod.py` (packer) and `read_pck.py` (inspector) |
+| **Godot 4.x** | To edit and preview mod scenes and scripts — not required, but strongly recommended |
+| A code editor | Any editor works — VS Code with the GDScript extension is a good choice |
 
-### Getting Started with Mods
-
-1. **Download the Mod SDK** — included in every release under `ModSDK/`
-2. **Read the modding docs** — see [`/docs/modding`](docs/modding/) or the [Wiki](../../wiki)
-3. **Use the example mods** — starter templates are in `ModSDK/examples/`
-4. **Test locally** — point the game to your mod folder in `settings.json`
-5. **Share your work** — post in [#mod-releases](https://discord.gg/your-invite) on Discord
+---
 
 ### Mod Folder Structure
 
 ```
-my-cool-mod/
-├── mod.json          ← Metadata: name, version, author, dependencies
-├── assets/
-│   ├── textures/
-│   ├── sounds/
-│   └── models/
-├── scripts/          ← Lua scripts for game logic
-├── maps/             ← Custom map files (.jwmap)
-└── README.md         ← Tell people what your mod does!
+my_mod/
+├── manifest.json          ← Required: mod metadata (id, name, version, description)
+├── mod_main.gd            ← Entry point — runs when your mod loads on the server
+├── tools/
+│   └── my_tool.gd         ← Custom tools (extend the base tool class)
+├── entities/
+│   └── my_entity.tscn     ← Spawnable entities (Godot scenes)
+├── sounds/
+│   └── my_sound.ogg       ← Audio assets
+└── icons/
+    └── my_tool.png        ← Icons shown in server UI / HUD
 ```
 
-### `mod.json` Reference
+When packed, all assets are available at runtime under `res://mods/<your_mod_id>/`.
 
-```json
-{
-  "id": "my-cool-mod",
-  "name": "My Cool Mod",
-  "version": "1.0.0",
-  "author": "YourName",
-  "game_version": ">=1.4.0",
-  "description": "Adds new weapons and a jungle biome.",
-  "dependencies": [],
-  "tags": ["weapons", "terrain"]
-}
+---
+
+### Naming Rules
+
+Mod IDs and **all filenames** must use lowercase letters, numbers, and underscores only:
+
+```
+my_jungle_mod   ✓
+MyJungleMod     ✗  (no capitals)
+my-jungle-mod   ✗  (no hyphens)
 ```
 
 ---
 
-## 🚀 Installation
+### manifest.json
 
-### Fresh Install
+```json
+{
+  "id":          "my_mod",
+  "name":        "My Mod",
+  "version":     "1.0.0",
+  "author":      "YourName",
+  "description": "What does your mod do?"
+}
+```
 
-1. Go to [**Releases**](../../releases) and download the latest stable build for your OS
-2. Run the installer (Windows) or extract the archive (Linux/macOS)
-3. Launch `JungleWarfair` — no additional setup required
+The `id` field must exactly match your mod's folder name. `author` is optional but encouraged.
 
-### Installing Mods
+---
 
-1. Download a mod (`.zip` or folder)
-2. Extract it into your mods directory:
-   - **Windows:** `%APPDATA%\JungleWarfair\mods\`
-   - **Linux:** `~/.config/JungleWarfair/mods/`
-   - **macOS:** `~/Library/Application Support/JungleWarfair/mods/`
-3. Launch the game and enable the mod in **Settings → Mods**
-4. Restart if prompted
+### Supported Asset Types
 
-### Updating
+| Type | Formats | Folder |
+|---|---|---|
+| Scripts | `.gd` | Anywhere in the mod folder |
+| Scenes / entities | `.tscn` | `entities/` |
+| Audio | `.ogg` | `sounds/` |
+| Icons / textures | `.png` | `icons/`, `textures/` |
 
-The game will notify you in-app when a new version is available. You can also watch this repo (👁️ **Watch → Releases only**) to get notified on GitHub.
+Other formats (`.wav`, `.jpg`, `.tres`, `.res`) may work but are untested — stick to the list above.
 
-> ⚠️ **Before updating:** Back up your saves and check if your mods are compatible with the new version.
+---
+
+### Avoiding Conflicts with Other Mods
+
+Always prefix your registered IDs with your mod ID:
+
+```gdscript
+ToolRegistry.register("my_mod:my_tool", ...)    # ✓ good
+ToolRegistry.register("my_tool", ...)           # ✗ bad — may clash with another mod
+```
+
+This applies to `ToolRegistry`, `EntityRegistry`, `Console` commands, and any global keys.
+
+---
+
+### Available Autoloads
+
+These are always available in your GDScript:
+
+| Autoload | What it does |
+|---|---|
+| `ModLoader` | Check if other mods are loaded |
+| `ToolRegistry` | Register and look up tools |
+| `EntityRegistry` | Register and look up spawnable entities |
+| `GameEvents` | Connect to game-wide signals |
+| `Console` | Register commands, print to the in-game console |
+| `HUD` | Show hints, crosshairs, and notifications |
+| `Audio` | Play sounds in 2D or 3D space |
+
+### GameEvents Signals
+
+| Signal | When it fires |
+|---|---|
+| `player_joined(player)` | A player joins the server |
+| `player_left(player)` | A player disconnects |
+| `map_changed(map_id)` | The map changes |
+
+---
+
+### Building Your Mod
+
+Run the packer from the SDK folder:
+
+```
+python build_mod.py
+```
+
+You'll be prompted for:
+
+```
+Mod name:         my_mod
+Source directory: C:\projects\my_mod    ← the folder containing manifest.json
+Output directory: ./dist                ← where to save the .pck
+Godot version:    4.2
+```
+
+To verify the output before deploying:
+
+```
+python read_pck.py
+```
+
+All paths inside the `.pck` should start with `res://mods/<your_mod_id>/`. If they don't, you pointed the builder at the wrong folder.
+
+---
+
+### Installing a Mod on a Server
+
+Drop the `.pck` into the server's mods folder:
+
+- **Windows:** `%APPDATA%\JungleWarfair\mods\`
+- **Linux / macOS:** `~/.local/share/JungleWarfair/mods/`
+
+Restart the server. The `[ModLoader]` lines in the server log will confirm whether the mod loaded successfully.
+
+---
+
+## 🐛 Troubleshooting
+
+**Mod not recognised by the server**
+- `manifest.json` must be at the **root** of your mod folder, not inside a subfolder
+- Required fields: `id`, `name`, `version`, `description` — all must be present
+- The `id` field must exactly match your folder name, lowercase and underscores only
+- Double-check the `.pck` is in the correct mods folder for your OS (see above)
+
+**Assets not loading (missing textures, sounds, scenes)**
+- Run `python read_pck.py` — paths must start with `res://mods/<your_mod_id>/`
+- Make sure you pointed `build_mod.py` at the folder that *contains* `manifest.json`, not a parent folder
+- Filenames are case-sensitive on Linux — use lowercase everywhere
+
+**Script errors or mod crashes on load**
+- Confirm `mod_main.gd` extends the correct base class — check the tutorial mod for the signature
+- If you extended a framework class, make sure the `.pck` was built against a matching Godot version; rerun `build_mod.py` and enter the correct version when prompted
+- Check the server log for `[ModLoader]` lines — they will describe exactly what failed
+
+**`build_mod.py` fails or outputs an empty `.pck`**
+- Confirm you are running Python 3 (`python3 --version`)
+- The source directory must contain `manifest.json` at its root
+- On Windows, use a full absolute path with no trailing slash (e.g. `C:\projects\my_mod`)
+
+**ID conflicts with another mod**
+- Prefix all registered IDs with your mod ID (see above)
+- Use `ModLoader.is_mod_loaded("other_mod_id")` to check before registering shared resources
 
 ---
 
 ## 📋 Changelog
 
-Full patch notes for every version are available in the [Releases](../../releases) tab and in [`CHANGELOG.md`](CHANGELOG.md).
-
-**Recent highlights:**
-- `v1.5.0` — New faction system, mod API v2, Linux fixes
-- `v1.4.2` — Hotfix: crash on map load with large mod lists
-- `v1.4.0` — Procedural terrain overhaul, sound modding support
+Full SDK release notes are in the [Releases](../../releases) tab and in [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
-## 🤝 Community & Support
+## 📢 Sharing Your Mod
 
-| Resource | Link |
-|---|---|
-| 💬 Discord | [Join the server](https://discord.gg/your-invite) |
-| 🐛 Bug Reports | [Open an issue](../../issues/new?template=bug_report.md) |
-| 💡 Feature Requests | [Start a discussion](../../discussions/new?category=ideas) |
-| 📖 Wiki & Docs | [Browse the wiki](../../wiki) |
-| 🗺️ Mod Showcase | [Show off your mods](../../discussions/categories/mod-showcase) |
-
-Found a bug? Please include your OS, game version, and any mods installed when reporting.
+There's no central mod store yet — for now, open a [Discussion](../../discussions) in this repo to share your work, get feedback, or find collaborators. More info on this will come as the game develops.
 
 ---
 
-## ⚖️ License & Legal
+## ⚖️ License
 
-Jungle Warfair is released under the [MIT License](LICENSE).  
-You are free to create and distribute mods, including commercial ones, as long as you do not redistribute the base game itself.
+**The game itself is proprietary and closed source.** The binaries are free to download and play, but you may not decompile, reverse engineer, or redistribute them.
 
-- ✅ Creating and selling mods — **allowed**
-- ✅ Streaming and making videos — **allowed**  
-- ✅ Forking modding tools from this repo — **allowed**
-- ❌ Redistributing the game binaries — **not allowed**
-- ❌ Removing credits from mods that include original game assets — **not allowed**
+The Mod SDK tooling (`build_mod.py`, `read_pck.py`, and related scripts) is released under the [MIT License](LICENSE) — you are free to fork and modify the tools.
+
+**Summary:**
+
+- ✅ Downloading and playing the game — allowed
+- ✅ Creating and sharing mods — allowed
+- ✅ Forking and modifying the Mod SDK tooling — allowed
+- ❌ Redistributing game binaries — not allowed
+- ❌ Decompiling or reverse engineering the game — not allowed
+- ❌ Requesting or expecting source code access — will not happen
+- ❌ Using mods to bypass anti-cheat or gain unfair advantages — not allowed, results in a permanent ban
 
 ---
 
 <div align="center">
 
-Made with 🌿 by the Jungle Warfair team  
-*Drop into the canopy. Adapt or die.*
+*More info coming as development continues.*
 
 </div>

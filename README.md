@@ -1,6 +1,5 @@
 <div align="center">
 
-<div align="center">
 ```
      ██╗██╗   ██╗███╗  ██╗ ██████╗ ██╗     ███████╗
      ██║██║   ██║████╗ ██║██╔════╝ ██║     ██╔════╝
@@ -16,7 +15,6 @@
 ╚███╔███╔╝██║  ██║██║  ██║██║     ██║  ██║██║  ██║███████╗
  ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 ```
-</div>
 
 **Build. Command. Raid. Survive.**  
 *A jungle survival war game — with a full modding framework.*
